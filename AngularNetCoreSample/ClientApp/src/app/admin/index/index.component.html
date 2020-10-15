@@ -1,0 +1,28 @@
+
+<div class="container-fluid" *ngIf="!isResizing">
+    <div class="block-header">
+        <h2> Request/Complaint Dashboard</h2>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="['/admin']"><i class="icon-home"></i></a></li>
+            <li class="breadcrumb-item active">Main Page/li>
+        </ul>
+    </div>
+    <div class="row clearfix">
+        <div class="col-lg-6 col-md-6 col-sm-12" >
+            <app-annual-application-count></app-annual-application-count>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <app-top-claim-topic></app-top-claim-topic>
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-lg-6 col-md-12">
+            <app-aplication-status></app-aplication-status>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <app-call-turning-into-application></app-call-turning-into-application>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+<div id="left-sidebar" class="sidebar" *ngIf="sidebarVisible" style="overflow-y:scroll;">
+    <div class="sidebar-scroll pt-2">
+
+            <div class="tab-pane active mt-3" id="menu" >
+                <nav id="left-sidebar-nav" class="sidebar-nav">
+                    <ul id="main-menu" class="metismenu">
+                        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngClass]="{'active':currentActiveMenu == 'dashboard'}">
+                            <a [routerLink]="['/admin/dashboard']"><i class="icon-home"></i>
+                                <span>Main Page</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+</div>
