@@ -9,6 +9,6 @@ export class TopClaimTopicService {
     constructor(private http: HttpClient) { }
 
     get() {
-        return this.http.get<[TopClaimTopic]>(`${environment.apiUrl}/Dashboard/GetTopClaimTopicService`);
+        return this.http.get<[TopClaimTopic]>(`${environment.apiUrl}/Dashboard/GetTopClaimTopic`);
     }
 }

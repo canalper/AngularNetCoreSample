@@ -35,24 +35,24 @@ namespace AngularNetCoreSample.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetTopClaimTopicService()
+        public async Task<IActionResult> GetTopClaimTopic()
         {
             var TopClaimTopicServices = await Task.Run(() => TopClaimTopicService.GetList());
             return Ok(TopClaimTopicServices);
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetApplicationStatusService()
+        public async Task<IActionResult> GetApplicationStatus()
         {
             var ApplicationStatusServices = await Task.Run(() => ApplicationStatusService.GetList());
             return Ok(ApplicationStatusServices);
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetCallTurningIntoApplicationService()
+        public async Task<IActionResult> GetCallTurningIntoApplication()
         {
             var CallTurningIntoApplicationServices = await Task.Run(() => CallTurningIntoApplicationService.GetList());
-            return Ok(CallTurningIntoApplicationService);
+            return Ok(CallTurningIntoApplicationServices);
         }
     }
 }

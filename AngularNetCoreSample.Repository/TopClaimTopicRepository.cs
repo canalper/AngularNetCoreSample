@@ -15,7 +15,7 @@ namespace AngularNetCoreSample.Repository
         {
             using (var db = new AngularNetCoreSampleDbContext())
             {
-                return await Task.Run(() => db.TopClaimTopic.AsNoTracking().OrderBy(m => m.TopicDescription).ToList());
+                return await Task.Run(() => db.TopClaimTopic.AsNoTracking().OrderByDescending(m => m.Count).ToList());
             }          
         }
     }

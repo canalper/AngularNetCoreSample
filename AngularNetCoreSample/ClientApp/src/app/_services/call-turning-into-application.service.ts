@@ -9,6 +9,6 @@ export class CallTurningIntoApplicationService {
     constructor(private http: HttpClient) { }
 
     get() {
-        return this.http.get<[CallTurningIntoApplication]>(`${environment.apiUrl}/Dashboard/GetCallTurningIntoApplicationService`);
+        return this.http.get<[CallTurningIntoApplication]>(`${environment.apiUrl}/Dashboard/GetCallTurningIntoApplication`);
     }
 }

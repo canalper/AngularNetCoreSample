@@ -9,6 +9,6 @@ export class ApplicationStatusService {
     constructor(private http: HttpClient) { }
 
     get() {
-        return this.http.get<[ApplicationStatus]>(`${environment.apiUrl}/Dashboard/GetApplicationStatusService`);
+        return this.http.get<[ApplicationStatus]>(`${environment.apiUrl}/Dashboard/GetApplicationStatus`);
     }
 }
