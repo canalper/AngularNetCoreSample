@@ -7,3 +7,5 @@
   * Repository Layer for CRUD
   * Service Layer for complex operation 
   * Sample Unit Test Project for Repository
+
+![image](https://raw.githubusercontent.com/canalper/AngularNetCoreSample/master/dashboard-sample.png)
