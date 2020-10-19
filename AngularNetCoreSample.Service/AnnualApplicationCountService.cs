@@ -19,5 +19,10 @@ namespace AngularNetCoreSample.Service
         {
             return await Task.Run(() => AnnualApplicationCountRepository.GetList());
         }
+
+        public AnnualApplicationCount GetByID(int id)
+        {
+            return AnnualApplicationCountRepository.GetByID(id);
+        }
     }
 }

@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularNetCoreSample.Reposi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularNetCoreSample.Service", "AngularNetCoreSample.Service\AngularNetCoreSample.Service.csproj", "{2CE2BDD6-3D83-4E9C-A845-D1E6C1AB6511}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{99E7B2DC-495F-49FD-A46D-CC3722F5AD70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularNetCoreSample.Service.Tests", "AngularNetCoreSample.Service.Tests\AngularNetCoreSample.Service.Tests.csproj", "{48DB9885-AADF-4DEC-9588-148CE8B25652}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,9 +43,16 @@ Global
 		{2CE2BDD6-3D83-4E9C-A845-D1E6C1AB6511}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CE2BDD6-3D83-4E9C-A845-D1E6C1AB6511}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CE2BDD6-3D83-4E9C-A845-D1E6C1AB6511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48DB9885-AADF-4DEC-9588-148CE8B25652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48DB9885-AADF-4DEC-9588-148CE8B25652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48DB9885-AADF-4DEC-9588-148CE8B25652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48DB9885-AADF-4DEC-9588-148CE8B25652}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48DB9885-AADF-4DEC-9588-148CE8B25652} = {99E7B2DC-495F-49FD-A46D-CC3722F5AD70}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B0F0026-EECF-4E36-A27C-FA023A1773BC}

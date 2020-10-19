@@ -18,5 +18,13 @@ namespace AngularNetCoreSample.Repository
                 return await Task.Run(() => db.AnnualApplicationCount.AsNoTracking().OrderBy(m => m.Year).ToList());
             }          
         }
+
+        public AnnualApplicationCount GetByID(int id)
+        {
+            using (var db = new AngularNetCoreSampleDbContext())
+            {
+                return db.AnnualApplicationCount.AsNoTracking().Where(m=>m.Id==id).OrderBy(m => m.Year).FirstOrDefault();
+            }
+        }
     }
 }

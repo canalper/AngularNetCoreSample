@@ -9,5 +9,7 @@ namespace AngularNetCoreSample.Repository.Interfaces
     public interface IAnnualApplicationCountRepository
     {
        Task<List<AnnualApplicationCount>> GetList();
+
+        AnnualApplicationCount GetByID(int id);
     }
 }
